@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  flex-grow: 1;
+  text-align: center;
+  padding-left: 50px;
+}
+
+nav a {
+  color: #fff;
+  display: block;
+  padding: 1em 0;
+  text-decoration: none;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+}
+
+section {
+  padding: 2em;
+}
+
+.services-list,
+.products-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service,
+.product {
+  width: 33.33%;
+  text-align: center;
+  padding: 1em;
+}
+
+.service img,
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.service h3,
+.product h3 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.service p,
+.product p {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-section {
+  text-align: center;
+  margin: 2em 0;
+}
+
+video {
+  max-width: 100%;
+}
+
+#about {
+  background-color: #eee;
+  padding: 2em 0;
+}
+
+#contact {
+  background-color: #333;
+  color: #fff;
+  padding: 2em 0;
+}
+
+#contact h2 {
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 5px;
+  border: 1px solid #333;
+  font-size: 0.9em;
+}
+
+#contact input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+#contact input[type="submit"]:hover {
+background-color: #fff;
+color: #333;
+}
+
+#contact textarea {
+width: 100%;
+padding: 1em;
+font-size: 0.9em;
+margin-top: 1em;
+border: 1px solid #333;
+border-radius: 5px;
+resize: none;
+}
+
+#contact textarea:focus {
+outline: none;
+border-color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-form input[type="email"] {
+  width: 220px;
+  padding: 10px;
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.subscribe-form button[type="submit"] {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <header>
+        <div class="container">
+          <h1>Welcome to Our Company</h1>
+          <p>We provide innovative solutions for all your needs</p>
+        </div>
+      </header>
+      
+      <section id="services">
+        <div class="container">
+          <h2>Our Services</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel aliquet risus. Integer a elit risus. Maecenas id libero varius, laoreet lectus ut, commodo est.</p>
+          <div class="services-list">
+            <div class="service">
+              <img src="https://source.unsplash.com/random/200x200" alt="Service 1">
+              <h3>Service 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel aliquet risus.</p>
+            </div>
+            <div class="service">
+              <img src="https://source.unsplash.com/random/200x200" alt="Service 2">
+              <h3>Service 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel aliquet risus.</p>
+            </div>
+            <div class="service">
+              <img src="https://source.unsplash.com/random/200x200" alt="Service 3">
+              <h3>Service 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel aliquet risus.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="products">
+        <div class="container">
+          <h2>Our Products</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel aliquet risus. Integer a elit risus. Maecenas id libero varius, laoreet lectus ut, commodo est.</p>
+          <div class="products-list">
+            <div class="product">
+              <img src="https://source.unsplash.com/random/200x200" alt="Product 1">
+              <h3>Product 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel aliquet risus.</p>
+            </div>
+            <div class="product">
+              <img src="https://source.unsplash.com/random/200x200" alt="Product 2">
+              <h3>Product 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel aliquet risus.</p>
+            </div>
+            <div class="product">
+                <img src="https://source.unsplash.com/random/200x200" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel aliquet risus.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section id="about">
+          <div class="container">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel aliquet risus. Integer a elit risus. Maecenas id libero varius, laoreet lectus ut, commodo est.</p>
+            <div class="video-section">
+              <video controls src="https://source.unsplash.com/random/800x400"></video>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel aliquet risus. Integer a elit risus. Maecenas id libero varius, laoreet lectus ut, commodo est.</p>
+          </div>
+        </section>
+        
+        <section id="contact">
+          <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+              <input type="text" name="name" placeholder="Name">
+              <input type="email" name="email" placeholder="Email">
+              <textarea name="message" placeholder="Message"></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </section>
+        
+        <footer>
+          <div class="footer">
+            <p>Copyright &copy; 2022 Our Company</p>
+            <div class="social-handles">
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+            </div>
+            <form action="#" method="post">
+              <input type="email" name="email" placeholder="Subscribe to our newsletter">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </footer>
+        
+      
+</body>
+</html>
