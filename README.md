@@ -2,7 +2,7 @@
 
 ### The purpose of this project is to demonstrate a basic understanding of running a server and displaying a website on it.
 
-This is a simple website built using only CSS, HTML and displyed using NodeJs on the server.
+This is a simple website built using only CSS, HTML and displyed using NodeJs (http) on the server.
 
 ## Getting Started
 
